@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Weakness Checker</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <img id='logo' src='./assets/pngegg.png' alt-text='Pokemon Logo'>
+    <h2>Strength and Weaknesses</h2>
+    <h4>Choose a type:</h4>
+    <div class='typeSelector'>
+        <select id='kindOne'>
+            <option value=''>Select</option>
+            <option value='normal'>Normal</option>
+            <option value='fire'>Fire</option>
+            <option value='water'>Water</option>
+            <option value='electric'>Electric</option>
+            <option value='grass'>Grass</option>
+            <option value='ice'>Ice</option>
+            <option value='fighting'>Fighting</option>
+            <option value='poison'>Poison</option>
+            <option value='ground'>Ground</option>
+            <option value='flying'>Flying</option>
+            <option value='psychic'>Psychic</option>
+            <option value='bug'>Bug</option>
+            <option value='rock'>Rock</option>
+            <option value='ghost'>Ghost</option>
+            <option value='dark'>Dark</option>
+            <option value='dragon'>Dragon</option>
+            <option value='steel'>Steel</option>
+            <option value='fairy'>Fairy</option>
+        </select>
+        <select id='kindTwo'>
+            <option value=''>Select</option>
+            <option value='normal'>Normal</option>
+            <option value='fire'>Fire</option>
+            <option value='water'>Water</option>
+            <option value='electric'>Electric</option>
+            <option value='grass'>Grass</option>
+            <option value='ice'>Ice</option>
+            <option value='fighting'>Fighting</option>
+            <option value='poison'>Poison</option>
+            <option value='ground'>Ground</option>
+            <option value='flying'>Flying</option>
+            <option value='psychic'>Psychic</option>
+            <option value='bug'>Bug</option>
+            <option value='rock'>Rock</option>
+            <option value='ghost'>Ghost</option>
+            <option value='dark'>Dark</option>
+            <option value='dragon'>Dragon</option>
+            <option value='steel'>Steel</option>
+            <option value='fairy'>Fairy</option>
+        </select>
+    </div>
+    <h4>-OR-</h4>
+    <div class='typeSelector'>
+        <label><b>Pokemon Name:</b></label>
+        <input type='text' placeholder='' id='pokemonName'>
+    </div>
+    <p>*Content in Pokemon Name takes priority over chosen types.</p>
+    <p>** This does not take abilities or items into consideration</p>
+    <div class='typeSelector'>
+        <button id='check'>Check Strength and Weaknesses</button>
+    </div>
+    <div id='examples'></div>
+    <div class='container'>
+        <div class='row'>
+            <div class='col'>4x's Damage<ul id='super4'></ul></div>
+            <div class='col'>2x's Damage<ul id='super2'></ul></div>
+            <div class='col'>Half Damage<ul id='half'></ul></div>
+            <div class='col'>1/4 Damage<ul id='quarter'></ul></div>
+            <div class='col'>No Damage<ul id='noneDamage'></ul></div>
+        </div>
+    </div>
+    <footer>
+        <p>©2021 Pokémon. ©1995-2021 Nintendo/Creatures Inc./GAME FREAK inc.</p>
+    </footer>
+    <div></div>
+    <script src='./script.js'></script>
+</body>
+</html>
